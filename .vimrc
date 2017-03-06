@@ -16,6 +16,8 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'slim-template/vim-slim'
+
 let g:ctrlp_map = '<c-p>'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,6 +39,8 @@ inoremap jk <ESC>
 
 " Settings
 set number
+set smarttab
+set expandtab
 set ttyfast
 set autoindent
 set tabstop=2
@@ -45,6 +49,7 @@ set softtabstop=2
 set backspace=2
 set directory=~/.tmp
 
+autocmd BufWritePre * %s/\s\+$//e
 " Color Scheme
 syntax enable
 set background=dark
@@ -60,8 +65,3 @@ let NERDTreeQuitOnOpen=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" Whitespace stuff
-let g:indentLine_char='•'
-let g:indentLine_leadingSpaceChar='•'
-let g:indentLine_leadingSpaceEnabled=1
-let g:indentLine_color_term=237
