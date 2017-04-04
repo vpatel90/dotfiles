@@ -10,11 +10,11 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'crusoexia/vim-monokai'
-
 Plugin 'kien/ctrlp.vim'
 
 Plugin 'scrooloose/nerdtree'
+
+Plugin 'rakr/vim-one'
 
 Plugin 'slim-template/vim-slim'
 
@@ -57,8 +57,6 @@ set directory=~/.tmp
 autocmd BufWritePre * %s/\s\+$//e
 " Color Scheme
 syntax enable
-set background=dark
-colorscheme solarized
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -79,3 +77,10 @@ nnoremap <leader>a ^
 nnoremap <leader>e $
 nnoremap <leader>Q :qa!<CR>
 nnoremap <leader>w <C-w>
+
+" Theme
+let g:airline_theme='one'
+colorscheme one
+let g:one_allow_italics = 1
+set background=dark
+hi Normal ctermbg=none
