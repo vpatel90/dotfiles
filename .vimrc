@@ -10,13 +10,15 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'crusoexia/vim-monokai'
 
 Plugin 'kien/ctrlp.vim'
 
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'slim-template/vim-slim'
+
+Plugin 'vim-syntastic/syntastic'
 
 let g:ctrlp_map = '<c-p>'
 " All of your Plugins must be added before the following line
@@ -39,6 +41,9 @@ inoremap jk <ESC>
 
 " Settings
 set number
+set relativenumber
+set autoread
+set title
 set smarttab
 set expandtab
 set ttyfast
@@ -65,3 +70,12 @@ let NERDTreeQuitOnOpen=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Leader key and commands
+let mapleader=","
+nnoremap <leader>F :NERDTreeFind<CR>
+nnoremap <leader>vv :vsplit<CR>
+nnoremap <leader>hh :split<CR>
+nnoremap <leader>a ^
+nnoremap <leader>e $
+nnoremap <leader>Q :qa!<CR>
+nnoremap <leader>w <C-w>
