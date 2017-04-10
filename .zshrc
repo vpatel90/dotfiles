@@ -92,12 +92,14 @@ alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 
 alias subl="/usr/local/bin/sublime"
 export EDITOR="/usr/local/bin/sublime -w"
-source /Users/vivekpatel/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source "zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 alias zshconfig="vim ~/.zshrc"
 
 alias beg="bundle exec guard"
 
 alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
+
+alias mixc="iex -S mix"
 
 prompt_context () { }
