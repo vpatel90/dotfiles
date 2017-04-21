@@ -22,6 +22,8 @@ Plugin 'vim-syntastic/syntastic'
 
 Plugin 'nathanaelkane/vim-indent-guides'
 
+Plugin 'elixir-lang/vim-elixir'
+
 let g:ctrlp_map = '<c-p>'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
