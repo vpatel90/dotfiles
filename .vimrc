@@ -20,6 +20,8 @@ Plugin 'slim-template/vim-slim'
 
 Plugin 'vim-syntastic/syntastic'
 
+Plugin 'nathanaelkane/vim-indent-guides'
+
 let g:ctrlp_map = '<c-p>'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,6 +55,7 @@ set shiftwidth=2
 set softtabstop=2
 set backspace=2
 set directory=~/.tmp
+set laststatus=2
 
 autocmd BufWritePre * %s/\s\+$//e
 " Color Scheme
@@ -77,6 +80,7 @@ nnoremap <leader>a ^
 nnoremap <leader>e $
 nnoremap <leader>Q :qa!<CR>
 nnoremap <leader>w <C-w>
+
 
 " Theme
 let g:airline_theme='one'
