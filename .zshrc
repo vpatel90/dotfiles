@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/vivekpatel/.oh-my-zsh
+export ZSH=/Users/vivek/.oh-my-zsh
 VARS=~/.vars
 source $VARS
 # Set name of the theme to load.
@@ -90,8 +90,6 @@ alias rr="rake db:drop db:create && rake db:migrate && rake db:seed db:test:prep
 
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 
-alias subl="/usr/local/bin/sublime"
-export EDITOR="/usr/local/bin/sublime -w"
 source "zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 alias zshconfig="vim ~/.zshrc"
