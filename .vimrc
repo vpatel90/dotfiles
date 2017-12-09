@@ -101,6 +101,8 @@ nnoremap <leader>e $
 nnoremap <leader>Q :qa!<CR>
 nnoremap <leader>w <C-w>
 noremap <C-f> :Find<space>
+noremap <leader>H :set hlsearch<CR>
+noremap <leader>HH :noh<CR>
 
 
 " Theme
