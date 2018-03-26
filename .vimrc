@@ -73,10 +73,11 @@ set directory=~/.tmp
 set laststatus=2
 set updatetime=250
 set wildignore+=*/.git/*,tmp/*/**,*.swp,log/*/**,vendor/*/**
+set synmaxcol=200
 
 autocmd BufWritePre * %s/\s\+$//e
 " Color Scheme
-colorscheme onedark
+colorscheme solarized
 syntax enable
 
 " CtrlP
@@ -103,10 +104,12 @@ nnoremap <leader>w <C-w>
 noremap <C-f> :Find<space>
 noremap <leader>H :set hlsearch<CR>
 noremap <leader>HH :noh<CR>
+noremap <leader>TT <C-]>
 
 
 " Theme
 let g:airline_theme='one'
 let g:one_allow_italics = 1
-set background=dark
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+set background=light
 hi Normal ctermbg=none
